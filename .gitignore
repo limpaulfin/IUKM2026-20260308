@@ -1,0 +1,21 @@
+# Large data files (download separately)
+data/raw/IMF_FSI_raw_*.csv
+
+# R artifacts
+.Rhistory
+.RData
+*.Rproj.user
+.Renviron
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.b
+*.bak*
+
+# Editor files
+*.swp
+*.swo
+*~
