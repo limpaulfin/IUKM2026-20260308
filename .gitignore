@@ -1,3 +1,6 @@
+# PDFs (unpublished manuscript - do not expose)
+output/*.pdf
+
 # Large data files (download separately)
 data/raw/IMF_FSI_raw_*.csv
 
