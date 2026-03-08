@@ -1,66 +1,52 @@
-# Replikationspaket - Bayes-Netzwerk Finanzstabilität
+# Datenpaket
 
-Dieses Repository enthält den Analysecode und die Daten zur Reproduktion der Ergebnisse.
+Statistischer Code und Rohmaterial zur Ergebniswiederholung.
 
-## Version
+## Stand
 
-| Element | Version | Datum |
-|---------|---------|-------|
-| Manuskript | v1.0 | 2026-03-08 |
-| Ergänzungsmaterial | v1.0 | 2026-03-08 |
-| R-Analysecode | v1.0 | 2026-02-10 |
-| Rohdaten | Snapshot | 2026-01-27 |
-| Verarbeitete Daten | Pipeline | 2026-02-10 |
+| Teil | Nr. | Tag |
+|------|-----|-----|
+| Aufsatz | 1.0 | 08.03.2026 |
+| Anhang | 1.0 | 08.03.2026 |
+| Skripte | 1.0 | 10.02.2026 |
+| Quelldaten | -- | 27.01.2026 |
+| Ergebnis | -- | 10.02.2026 |
 
-## Autoren
+## Verfasser
 
-- **Thanh-Phong Lam** -- Hochschule für Bankwesen, Ho-Chi-Minh-Stadt (ORCID: 0009-0001-7790-5671)
-- **Thi-Linh Ho** (Korrespondenz) -- Ton-Duc-Thang-Universität (ORCID: 0009-0009-8187-8854)
+- **T.-P. Lam** - HUB, HCMC (0009-0001-7790-5671)
+- **T.-L. Ho** - TDTU (0009-0009-8187-8854)
 
-## Verzeichnisstruktur
+## Aufbau
 
 ```
-.
-├── output/          Fertige PDF-Dokumente
-├── code/            R-Skripte (Pipeline)
-│   └── init-R.sh   Startskript
-└── data/
-    ├── raw/         Originaldaten (5 Quellen)
-    └── processed/   Aufbereitete Daten
+output/     Fertige Aufsaetze (PDF)
+code/       R-Skripte
+data/raw/   Quelldaten
+data/processed/  Aufbereitetes Material
 ```
 
-## Datenquellen
+## Quellen
 
-| Quelle | Variablen |
-|--------|-----------|
-| Weltbank GFDD | Finanztiefe |
-| Weltbank WDI | BIP, Inflation |
-| IWF FSI | NPL, Z-Score, CAR |
-| IWF COFER | Devisenreserven |
-| IADI | Einlagensicherung |
-| Harvard Dataverse | Bankdaten Vietnam |
+| Herkunft | Inhalt |
+|----------|--------|
+| GFDD | Kredittiefe |
+| WDI | Makrodaten |
+| FSI | Bankstabilitaet |
+| COFER | Reserven |
+| IADI | Sicherungssysteme |
+| Harvard DV | VN-Banken |
 
-**Hinweis:** IWF-FSI-Rohdaten (86 MB) sind wegen der Dateigröße nicht enthalten. Bitte direkt vom IWF herunterladen und als `data/raw/IMF_FSI_raw_20260127.csv` speichern.
+FSI-Datei (86 MB) fehlt. Bitte selbst laden: `data/raw/IMF_FSI_raw_20260127.csv`.
 
-## Reproduktion
+## Ausfuehrung
 
 ```bash
-cd code/
-chmod +x init-R.sh
-./init-R.sh
+cd code && chmod +x init-R.sh && ./init-R.sh
 ```
 
-Voraussetzungen: R >= 4.3.0, Pakete siehe `code/00_setup.R`.
+R >= 4.3.0 erforderlich. Pakete: `00_setup.R`.
 
-## Synchronisierung
+## Hinweis
 
-```bash
-# Vom privaten Quellrepo
-rsync -av manu1-2026-02/R/*.R ../TRAM2026-BN-Banking-public/IUKM2026/code/
-rsync -av manu3-IUKM2026/LaTeX/*.pdf ../TRAM2026-BN-Banking-public/IUKM2026/output/
-sed -i 's/ (AI-assisted)//g' code/*.R
-```
-
-## Lizenz
-
-Eingereicht bei IUKM 2026. Bitte korrekt zitieren.
+IUKM 2026. Zitat erbeten.
