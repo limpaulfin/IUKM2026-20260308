@@ -14,13 +14,12 @@ Statistischer Code und Rohmaterial zur Ergebniswiederholung.
 
 ## Verfasser
 
-- **T.-P. Lam** - BUH, HCMC (0009-0001-7790-5671)
-- **T.-L. Ho** - TDTU, HCMC (0009-0009-8187-8854)
+- **Thanh-Phong Lam** - BUH, HCMC (0009-0001-7790-5671)
+- **Thi-Linh Ho** - TDTU, HCMC (0009-0009-8187-8854)
 
 ## Aufbau
 
 ```
-output/     Fertige Aufsaetze (PDF)
 code/       R-Skripte
 data/raw/   Quelldaten
 data/processed/  Aufbereitetes Material
