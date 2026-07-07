@@ -6,11 +6,12 @@ Statistischer Code und Rohmaterial zur Ergebniswiederholung.
 
 | Teil | Nr. | Tag |
 |------|-----|-----|
-| Aufsatz | 1.0 | 08.03.2026 |
-| Anhang | 1.0 | 08.03.2026 |
-| Skripte | 1.0 | 10.02.2026 |
+| Aufsatz | 2.0 | 02.07.2026 |
+| Anhang | 2.0 | 02.07.2026 |
+| Skripte | 2.0 | 02.07.2026 |
+| Strukturlernen (W3) | 2.0 | 02.07.2026 |
 | Quelldaten | -- | 27.01.2026 |
-| Ergebnis | -- | 10.02.2026 |
+| Ergebnis | -- | 02.07.2026 |
 
 ## Verfasser
 
@@ -20,9 +21,10 @@ Statistischer Code und Rohmaterial zur Ergebniswiederholung.
 ## Aufbau
 
 ```
-code/       R-Skripte
-data/raw/   Quelldaten
+code/            R-Skripte (inkl. 16_w3_structure_learning.R, unrestringiertes Strukturlernen)
+data/raw/        Quelldaten
 data/processed/  Aufbereitetes Material
+output/w3/        Ergebnis Strukturlernen (Kantenliste + Bericht)
 ```
 
 ## Quellen

@@ -1,0 +1,11 @@
+"from","to","EIP","in_proposed_pathway"
+"FDI","GDP",1,FALSE
+"GDP","Z_score",0.988,FALSE
+"FD","NIM",1,TRUE
+"FD","FDI",1,FALSE
+"NPL","NIM",0.986,FALSE
+"GDP","NIM",1,FALSE
+"Z_score","NPL",0.994,TRUE
+"FD","NPL",0.996,FALSE
+"FDI","NIM",0.47,TRUE
+"FD","Z_score",0.758,FALSE
