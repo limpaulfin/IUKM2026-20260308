@@ -1,5 +1,8 @@
-# PDFs (unpublished manuscript - do not expose)
+# Compiled PDFs: publish only the extended version (main text + full
+# Supplementary), per the round-2 revision availability statement. Other
+# build PDFs stay local.
 output/*.pdf
+!output/IUKM2026-extended-version.pdf
 
 # Large data files (download separately)
 data/raw/IMF_FSI_raw_*.csv

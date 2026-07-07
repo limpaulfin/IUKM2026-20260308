@@ -25,6 +25,7 @@ code/            R-Skripte (inkl. 16_w3_structure_learning.R, unrestringiertes S
 data/raw/        Quelldaten
 data/processed/  Aufbereitetes Material
 output/w3/        Ergebnis Strukturlernen (Kantenliste + Bericht)
+output/IUKM2026-extended-version.pdf   Erweiterte Fassung (Haupttext + vollstaendiger Anhang)
 ```
 
 ## Quellen
